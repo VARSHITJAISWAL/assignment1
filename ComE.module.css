@@ -1,0 +1,46 @@
+.fix {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
+.bottomBar {
+  height: 5vh;
+  background-color: #003b6f;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+
+.item {
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.item:hover {
+  color: #00bfff;
+  transform: scale(1.1);
+}
+
+.link {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #00bfff;
+  text-decoration: underline;
+}
+
+.socialGroup {
+  display: flex;
+  gap: 10px;
+}

@@ -1,0 +1,38 @@
+/* src/components/ComB.module.css */
+.container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #0096a6, #00778c);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #ffffff, #4ea6a6);
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  color: #333;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.card:hover {
+  background: #0096a6;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Appointment Section */
+.appointmentSection {
+  border-top: 2px solid #e0e0e0;
+}

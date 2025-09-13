@@ -1,0 +1,86 @@
+/* Container takes full height */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #0096a6, #00778c);
+  color: #fff;
+}
+
+/* Cards Wrapper fills remaining height */
+.cardsWrapper {
+  flex-grow: 1; /* takes remaining space */
+  display: flex;
+  align-items: stretch;
+  padding: 2rem;
+}
+
+/* Card styles */
+.card {
+  background-color: #ffffff;
+  color: #333;
+  border: 2px solid #e0e0e0;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card:hover {
+  background-color: #0096a6;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Footer fixed at bottom */
+.footer {
+  background: #0096a6;
+  color: #fff;
+  font-weight: 500;
+}
+.footer span {
+  cursor: pointer;
+}
+.footer span:hover {
+  text-decoration: underline;
+}
+/* Make cardsWrapper take all remaining height */
+.cardsWrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: stretch;
+  padding: 2rem;
+}
+
+/* Force each card to expand vertically */
+.row.h-100 {
+  flex: 1;
+}
+
+/* Make every card tile taller */
+.card {
+  background-color: #ffffff;
+  color: #333;
+  border: 2px solid #e0e0e0;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* 🔥 this makes them taller to fill screen */
+  min-height: 200px; /* increase this if you want even taller tiles */
+}
+.card:hover {
+  background-color: #0096a6;
+  color: #fff;
+  transform: scale(1.05);
+}
+.card {
+  min-height: 250px;
+}
