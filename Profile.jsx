@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import styles from "./profile.module.css";
+import styles from "./Profile.module.css";
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -104,3 +104,4 @@ const Profile = () => {
 };
 
 export default Profile;
+
